@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-configuration-processor/3.0.4/120cb2d8ed8f5f006bcc97813a920f25bd1a76da/spring-boot-configuration-processor-3.0.4.jar" />
+        </processorPath>
+        <module name="spring-boot-kts.domain.main" />
+        <module name="spring-boot-kts.test-support.main" />
+        <module name="spring-boot-kts.adepter.r2dbc.main" />
+        <module name="spring-boot-kts.test-support.postgresql.main" />
+        <module name="spring-boot-kts.adepter.jpa.main" />
+        <module name="spring-boot-kts.adepter.main" />
+        <module name="spring-boot-kts.test-support.mysql.main" />
+        <module name="spring-boot-kts.web.main" />
+        <module name="spring-boot-kts.reactive-web.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="17" />
+  </component>
+</project>
