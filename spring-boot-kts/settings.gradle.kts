@@ -5,7 +5,6 @@ include("reactive-web")
 
 include("adepter:r2dbc")
 include("adepter:jpa")
-include("adepter:redis")
 
 include("domain")
 

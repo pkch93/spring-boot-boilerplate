@@ -1,19 +1,9 @@
-plugins {
-    id("java")
-}
-
-group = "dev.pkch"
-version = "1.0.0"
-
-repositories {
-    mavenCentral()
+tasks {
+    bootJar { enabled = false }
+    jar { enabled = true }
 }
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
-}
-
-tasks.getByName<Test>("test") {
-    useJUnitPlatform()
+    implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
+    runtimeOnly("org.postgresql:r2dbc-postgresql")
 }

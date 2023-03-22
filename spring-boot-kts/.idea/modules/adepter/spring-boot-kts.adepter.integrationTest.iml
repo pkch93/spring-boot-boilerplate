@@ -111,7 +111,7 @@
     </facet>
   </component>
   <component name="NewModuleRootManager">
-    <output-test url="file://$MODULE_DIR$/../../../adepter/build/classes/kotlin/integrationTest" />
+    <output-test url="file://$MODULE_DIR$/../../../adepter/build/classes/java/integrationTest" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../adepter/src/integration-test">
       <sourceFolder url="file://$MODULE_DIR$/../../../adepter/src/integration-test/kotlin" isTestSource="true" />

@@ -16,7 +16,6 @@
         <module name="spring-boot-kts.adepter.main" />
         <module name="spring-boot-kts.test-support.support-core.main" />
         <module name="spring-boot-kts.web.main" />
-        <module name="spring-boot-kts.adepter.redis.main" />
         <module name="spring-boot-kts.reactive-web.main" />
       </profile>
     </annotationProcessing>
