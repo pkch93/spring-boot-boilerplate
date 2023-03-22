@@ -5,8 +5,10 @@ include("reactive-web")
 
 include("adepter:r2dbc")
 include("adepter:jpa")
+include("adepter:redis")
 
 include("domain")
 
-include("test-support:mysql")
-include("test-support:postgresql")
+include("test-support:support-core")
+include("test-support:mysql-support")
+include("test-support:postgresql-support")

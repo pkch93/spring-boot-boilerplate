@@ -4,9 +4,9 @@
     <inspection_tool class="GradlePackageUpdate" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <option name="excludeList">
         <list>
+          <option value="io.github.microutils:kotlin-logging-jvm" />
           <option value="org.junit.jupiter:junit-jupiter-api" />
           <option value="org.junit.jupiter:junit-jupiter-engine" />
-          <option value="io.github.microutils:kotlin-logging-jvm" />
         </list>
       </option>
     </inspection_tool>

@@ -51,11 +51,10 @@ subprojects {
             compileClasspath += sourceSets.main.get().output
             runtimeClasspath += sourceSets.main.get().output
 
-            kotlin.srcDir("src/integration-test/kotlin")
-            resources.srcDir("src/integration-test/resources")
+            kotlin.srcDirs("src/integration-test/kotlin")
+            resources.srcDirs("src/integration-test/resources")
         }
     }
-
 
     val integrationTestImplementation by configurations.getting {
         extendsFrom(configurations.implementation.get())
@@ -69,10 +68,6 @@ subprojects {
             group = "verification"
             testClassesDirs = sourceSets["integrationTest"].output.classesDirs
             classpath = sourceSets["integrationTest"].runtimeClasspath
-
-            reports {
-                ignoreFailures = true
-            }
         }
     }
 
