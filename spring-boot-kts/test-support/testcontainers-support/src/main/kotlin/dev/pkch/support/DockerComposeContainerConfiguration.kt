@@ -60,7 +60,9 @@ abstract class DockerComposeContainerConfiguration(
 
     @PreDestroy
     fun stop() {
-        container.stop()
-        dockerComposeFile.delete()
+        if (container != null) {
+            container.stop()
+            dockerComposeFile.delete()
+        }
     }
 }

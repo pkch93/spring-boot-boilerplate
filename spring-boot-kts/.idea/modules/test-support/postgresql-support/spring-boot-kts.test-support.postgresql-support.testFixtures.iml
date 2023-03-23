@@ -17,6 +17,7 @@
           <stringArguments>
             <stringArg name="classpath">
               <args>
+                <arg>$MODULE_DIR$/../../../../test-support/postgresql-support/build/classes/kotlin/main</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.10/7c002ac41f547a82e81dfebd2a20577a738dbf3f/kotlin-stdlib-jdk8-1.8.10.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.8.10/cb726a23c808a850a43e7d6b9d1ba91b02fe9f05/kotlin-stdlib-jdk7-1.8.10.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.10/6d5560a229477df9406943d5feda5618e98eb64c/kotlin-stdlib-1.8.10.jar</arg>
@@ -68,11 +69,7 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../test-support/postgresql-support/build/classes/java/testFixtures" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../../test-support/postgresql-support/src/testFixtures">
-      <sourceFolder url="file://$MODULE_DIR$/../../../../test-support/postgresql-support/src/testFixtures/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../../test-support/postgresql-support/src/testFixtures/kotlin" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../../test-support/postgresql-support/src/testFixtures/resources" type="java-resource" />
-    </content>
+    <content url="file://$MODULE_DIR$/../../../../test-support/postgresql-support/src/testFixtures" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="spring-boot-kts.test-support.postgresql-support.main" />
@@ -81,10 +78,11 @@
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.8.10" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.10" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
-    <orderEntry type="module" module-name="spring-boot-kts.test-support.support-core.main" scope="RUNTIME" />
+    <orderEntry type="module" module-name="spring-boot-kts.test-support.testcontainers-support.main" scope="RUNTIME" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: io.github.microutils:kotlin-logging-jvm:3.0.5" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-reflect:1.8.10" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-starter:3.0.4" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.testcontainers:postgresql:1.17.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-starter-test:3.0.4" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.testcontainers:junit-jupiter:1.17.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.testcontainers:testcontainers:1.17.6" level="project" />
@@ -95,16 +93,17 @@
     <orderEntry type="library" scope="RUNTIME" name="Gradle: jakarta.annotation:jakarta.annotation-api:2.1.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-core:6.0.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.yaml:snakeyaml:1.33" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.testcontainers:jdbc:1.17.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains:annotations:17.0.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.jayway.jsonpath:json-path:2.7.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-test-autoconfigure:3.0.4" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-test:3.0.4" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-test:6.0.6" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.jupiter:junit-jupiter:5.9.2" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.mockito:mockito-junit-jupiter:4.8.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: jakarta.xml.bind:jakarta.xml.bind-api:4.0.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.assertj:assertj-core:3.23.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.hamcrest:hamcrest:2.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.mockito:mockito-junit-jupiter:4.8.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.jupiter:junit-jupiter:5.9.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.mockito:mockito-core:4.8.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.skyscreamer:jsonassert:1.5.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.xmlunit:xmlunit-core:2.9.1" level="project" />
@@ -119,11 +118,12 @@
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.slf4j:jul-to-slf4j:2.0.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-context:6.0.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-jcl:6.0.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.testcontainers:database-commons:1.17.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: net.minidev:json-smart:2.4.8" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.9.2" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.jupiter:junit-jupiter-params:5.9.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: jakarta.activation:jakarta.activation-api:2.1.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: net.bytebuddy:byte-buddy:1.12.23" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.jupiter:junit-jupiter-params:5.9.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.9.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: net.bytebuddy:byte-buddy-agent:1.12.23" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.objenesis:objenesis:3.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.vaadin.external.google:android-json:0.0.20131108.vaadin1" level="project" />

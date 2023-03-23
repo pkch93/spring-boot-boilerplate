@@ -13,8 +13,8 @@
         <module name="spring-boot-kts.adepter.r2dbc.main" />
         <module name="spring-boot-kts.test-support.mysql-support.main" />
         <module name="spring-boot-kts.adepter.jpa.main" />
+        <module name="spring-boot-kts.test-support.testcontainers-support.main" />
         <module name="spring-boot-kts.adepter.main" />
-        <module name="spring-boot-kts.test-support.support-core.main" />
         <module name="spring-boot-kts.web.main" />
         <module name="spring-boot-kts.reactive-web.main" />
       </profile>

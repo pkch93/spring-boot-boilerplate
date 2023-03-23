@@ -4,5 +4,6 @@ tasks {
 }
 
 dependencies {
-    implementation(project(":test-support:support-core"))
+    implementation(project(":test-support:testcontainers-support"))
+    implementation("org.testcontainers:mysql:${Versions.TEST_CONTAINERS}")
 }

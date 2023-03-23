@@ -1,6 +1,6 @@
 spring:
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
   datasource:
-    url: jdbc:mysql://localhost:3306/testdb?useSSL=false&characterEncoding=utf8&serverTimezone=KST
-    hikari:
-      username: testuser
-      password: 1234!@#$
+    driver-class-name: com.mysql.cj.jdbc.Driver
