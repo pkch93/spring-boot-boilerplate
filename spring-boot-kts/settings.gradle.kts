@@ -8,6 +8,6 @@ include("adepter:jpa")
 
 include("domain")
 
-include("test-support:testcontainers-support")
-include("test-support:mysql-support")
-include("test-support:postgresql-support")
+include("test-support:testcontainers-core")
+include("test-support:mysql")
+include("test-support:postgresql")

@@ -4,6 +4,6 @@ tasks {
 }
 
 dependencies {
-    implementation(project(":test-support:testcontainers-support"))
+    implementation(project(":test-support:testcontainers-core"))
     implementation("org.testcontainers:postgresql:${Versions.TEST_CONTAINERS}")
 }

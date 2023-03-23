@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id=":test-support:testcontainers-support:main" external.linked.project.path="$MODULE_DIR$/../../../../test-support/testcontainers-support" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="dev.pkch" external.system.module.type="sourceSet" external.system.module.version="1.0.0" type="JAVA_MODULE" version="4">
+<module external.linked.project.id=":test-support:testcontainers-core:test" external.linked.project.path="$MODULE_DIR$/../../../../test-support/testcontainers-core" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="dev.pkch" external.system.module.type="sourceSet" external.system.module.version="1.0.0" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
       <configuration />
@@ -17,6 +17,7 @@
           <stringArguments>
             <stringArg name="classpath">
               <args>
+                <arg>$MODULE_DIR$/../../../../test-support/testcontainers-core/build/classes/kotlin/main</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-test/3.0.4/eb934f1df3e6292d7b5800cfbbc237de90d174de/spring-boot-starter-test-3.0.4.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.microutils/kotlin-logging-jvm/3.0.5/82f2256aeedccfd9c27ea585274a50bf06517383/kotlin-logging-jvm-3.0.5.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.10/7c002ac41f547a82e81dfebd2a20577a738dbf3f/kotlin-stdlib-jdk8-1.8.10.jar</arg>
@@ -80,14 +81,20 @@
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.1/a99500cf6eea30535eeac6be73899d048f8d12a8/asm-9.1.jar</arg>
               </args>
             </stringArg>
-            <stringArg name="destination" arg="$MODULE_DIR$/../../../../test-support/testcontainers-support/build/classes/kotlin/main" />
+            <stringArg name="destination" arg="$MODULE_DIR$/../../../../test-support/testcontainers-core/build/classes/kotlin/test" />
             <stringArg name="jvmTarget" arg="17" />
-            <stringArg name="moduleName" arg="testcontainers-support" />
+            <stringArg name="moduleName" arg="testcontainers-core" />
             <stringArg name="apiVersion" arg="1.8" />
             <stringArg name="languageVersion" arg="1.8" />
           </stringArguments>
           <arrayArguments>
-            <arrayArg name="friendPaths" />
+            <arrayArg name="friendPaths">
+              <args>
+                <arg>$MODULE_DIR$/../../../../test-support/testcontainers-core/build/classes/java/main</arg>
+                <arg>$MODULE_DIR$/../../../../test-support/testcontainers-core/build/classes/kotlin/main</arg>
+                <arg>$MODULE_DIR$/../../../../test-support/testcontainers-core/build/libs/testcontainers-core-1.0.0-plain.jar</arg>
+              </args>
+            </arrayArg>
             <arrayArg name="pluginClasspaths">
               <args>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.8.10/85d7bed036617120f09209e52f38cae13809176f/kotlin-scripting-jvm-1.8.10.jar</arg>
@@ -122,15 +129,12 @@
     </facet>
   </component>
   <component name="NewModuleRootManager">
-    <output url="file://$MODULE_DIR$/../../../../test-support/testcontainers-support/build/classes/java/main" />
+    <output-test url="file://$MODULE_DIR$/../../../../test-support/testcontainers-core/build/classes/java/test" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../../test-support/testcontainers-support/src/main">
-      <sourceFolder url="file://$MODULE_DIR$/../../../../test-support/testcontainers-support/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../../test-support/testcontainers-support/src/main/kotlin" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../../test-support/testcontainers-support/src/main/resources" type="java-resource" />
-    </content>
+    <content url="file://$MODULE_DIR$/../../../../test-support/testcontainers-core/src/test" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="spring-boot-kts.test-support.testcontainers-core.testFixtures" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-test:3.0.4" level="project" />
     <orderEntry type="library" name="Gradle: io.github.microutils:kotlin-logging-jvm:3.0.5" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10" level="project" />
@@ -138,6 +142,7 @@
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter:3.0.4" level="project" />
     <orderEntry type="library" name="Gradle: org.testcontainers:junit-jupiter:1.17.6" level="project" />
     <orderEntry type="library" name="Gradle: org.testcontainers:testcontainers:1.17.6" level="project" />
+    <orderEntry type="module" module-name="spring-boot-kts.test-support.testcontainers-core.main" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-test-autoconfigure:3.0.4" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-test:3.0.4" level="project" />
     <orderEntry type="library" name="Gradle: com.jayway.jsonpath:json-path:2.7.0" level="project" />
@@ -196,4 +201,5 @@
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.objenesis:objenesis:3.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.platform:junit-platform-engine:1.9.2" level="project" />
   </component>
+  <component name="TestModuleProperties" production-module="spring-boot-kts.test-support.testcontainers-core.main" />
 </module>
