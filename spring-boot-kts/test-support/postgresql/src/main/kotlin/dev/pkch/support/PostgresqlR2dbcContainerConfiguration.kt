@@ -27,7 +27,7 @@ class PostgresqlR2dbcContainerConfiguration {
             val r2dbcUrl = "r2dbc:postgres://${container.host}:${container.firstMappedPort}/${container.databaseName}"
             TestPropertyValues.of("spring.r2dbc.url=$r2dbcUrl").applyTo(applicationContext)
             TestPropertyValues.of("spring.r2dbc.username=${container.username}").applyTo(applicationContext)
-            TestPropertyValues.of("spring.r2dbc.hikari.password=${container.password}").applyTo(applicationContext)
+            TestPropertyValues.of("spring.r2dbc.password=${container.password}").applyTo(applicationContext)
         }
     }
 }

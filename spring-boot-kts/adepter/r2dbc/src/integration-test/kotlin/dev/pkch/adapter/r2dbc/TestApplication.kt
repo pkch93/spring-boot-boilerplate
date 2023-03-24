@@ -1,4 +1,4 @@
-package dev.pkch.adatper.r2dbc
+package dev.pkch.adapter.r2dbc
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 

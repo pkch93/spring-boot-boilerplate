@@ -17,6 +17,9 @@
           <stringArguments>
             <stringArg name="classpath">
               <args>
+                <arg>$MODULE_DIR$/../../../../adepter/r2dbc/build/classes/kotlin/main</arg>
+                <arg>$MODULE_DIR$/../../../../adepter/r2dbc/build/classes/java/main</arg>
+                <arg>$MODULE_DIR$/../../../../adepter/r2dbc/build/tmp/kapt3/classes/main</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.10/7c002ac41f547a82e81dfebd2a20577a738dbf3f/kotlin-stdlib-jdk8-1.8.10.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.8.10/cb726a23c808a850a43e7d6b9d1ba91b02fe9f05/kotlin-stdlib-jdk7-1.8.10.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.10/6d5560a229477df9406943d5feda5618e98eb64c/kotlin-stdlib-1.8.10.jar</arg>
@@ -34,6 +37,7 @@
             <arrayArg name="friendPaths" />
             <arrayArg name="pluginClasspaths">
               <args>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.8.10/b0757fd774344d54ce93f5ad6c30ba1c1731c8ff/kotlin-compiler-embeddable-1.8.10.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.8.10/85d7bed036617120f09209e52f38cae13809176f/kotlin-scripting-jvm-1.8.10.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.8.10/605352a419127937229ab574b50146a4bb4122fa/kotlin-scripting-common-1.8.10.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.10/6d5560a229477df9406943d5feda5618e98eb64c/kotlin-stdlib-1.8.10.jar</arg>
@@ -46,6 +50,10 @@
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-project-model/1.8.10/b08f8eca6a556f00b9f2fbacc7aeafc6914b9f1d/kotlin-project-model-1.8.10.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-tooling-core/1.8.10/da3a4252e4b48833eb566227b2baecbaede8993/kotlin-tooling-core-1.8.10.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.8.10/b13ea9c7e46d589139e56086a878763290e20bd5/kotlin-script-runtime-1.8.10.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.8.10/1e90b778ea4669b6bcbfaca57313665ddd804779/kotlin-reflect-1.8.10.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/1.8.10/ad8541d9bc1cf9e52c3204161247910c2cf601d4/kotlin-daemon-embeddable-1.8.10.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/trove4j/1.0.20200330/3afb14d5f9ceb459d724e907a21145e8ff394f02/trove4j-1.0.20200330.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.6.0/330f2244e9030119ab3030fc3fededc86713d9cc/jna-5.6.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-util-io/1.8.10/aa7685d78461d1098087d8816075d5ae27ac413b/kotlin-util-io-1.8.10.jar</arg>
                 <arg>$KOTLIN_BUNDLED$/lib/allopen-compiler-plugin.jar</arg>
               </args>
@@ -68,6 +76,12 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../adepter/r2dbc/build/classes/java/testFixtures" />
     <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../adepter/r2dbc/build/generated/source/kapt/testFixtures">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../adepter/r2dbc/build/generated/source/kapt/testFixtures" isTestSource="false" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../adepter/r2dbc/build/generated/source/kaptKotlin/testFixtures">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../adepter/r2dbc/build/generated/source/kaptKotlin/testFixtures" isTestSource="false" generated="true" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../../adepter/r2dbc/src/testFixtures">
       <sourceFolder url="file://$MODULE_DIR$/../../../../adepter/r2dbc/src/testFixtures/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../adepter/r2dbc/src/testFixtures/kotlin" isTestSource="false" />
@@ -75,6 +89,15 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="Gradle: kaptGeneratedClasses">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../../adepter/r2dbc/build/tmp/kapt3/classes/testFixtures" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="module" module-name="spring-boot-kts.adepter.r2dbc.main" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.10" level="project" />
@@ -83,45 +106,52 @@
     <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: io.github.microutils:kotlin-logging-jvm:3.0.5" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-reflect:1.8.10" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-starter-data-r2dbc:3.0.4" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.infobip:infobip-spring-data-r2dbc-querydsl-boot-starter:8.1.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-starter:3.0.4" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.postgresql:r2dbc-postgresql:1.0.1.RELEASE" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.slf4j:slf4j-api:2.0.6" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.data:spring-data-r2dbc:3.0.3" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.r2dbc:r2dbc-pool:1.0.0.RELEASE" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.r2dbc:r2dbc-spi:1.0.0.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.infobip:infobip-spring-data-r2dbc-querydsl:8.1.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-starter-logging:3.0.4" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-autoconfigure:3.0.4" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot:3.0.4" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: jakarta.annotation:jakarta.annotation-api:2.1.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-core:6.0.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.yaml:snakeyaml:1.33" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.r2dbc:r2dbc-spi:1.0.0.RELEASE" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.ongres.scram:client:2.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: io.projectreactor.netty:reactor-netty-core:1.1.4" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: io.projectreactor:reactor-core:3.5.3" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.data:spring-data-relational:3.0.3" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.data:spring-data-commons:3.0.3" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-context:6.0.6" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-jdbc:6.0.6" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-r2dbc:6.0.6" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-tx:6.0.6" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-beans:6.0.6" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.projectreactor.addons:reactor-pool:1.0.0" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.reactivestreams:reactive-streams:1.0.4" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-starter-data-r2dbc:3.0.4" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.infobip:infobip-spring-data-common:8.1.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.infobip:infobip-spring-data-jdbc-annotation-processor:8.1.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.querydsl:querydsl-apt:5.0.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: ch.qos.logback:logback-classic:1.4.5" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.apache.logging.log4j:log4j-to-slf4j:2.19.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.slf4j:jul-to-slf4j:2.0.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-context:6.0.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-jcl:6.0.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.reactivestreams:reactive-streams:1.0.4" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.ongres.scram:common:2.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-resolver-dns-native-macos:osx-x86_64:4.1.89.Final" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-resolver-dns:4.1.89.Final" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-handler-proxy:4.1.89.Final" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-handler:4.1.89.Final" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-native-epoll:linux-x86_64:4.1.89.Final" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-aop:6.0.6" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-expression:6.0.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.data:spring-data-r2dbc:3.0.3" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.r2dbc:r2dbc-pool:1.0.0.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.data:spring-data-relational:3.0.3" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-jdbc:6.0.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.guava:guava:31.0.1-jre" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.querydsl:querydsl-sql-spring:5.0.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.querydsl:querydsl-sql:5.0.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.infobip:infobip-spring-data-jdbc-annotation-processor-common:8.1.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.auto.service:auto-service:1.0.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.querydsl:querydsl-codegen:5.0.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: ch.qos.logback:logback-core:1.4.5" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.apache.logging.log4j:log4j-api:2.19.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-aop:6.0.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-beans:6.0.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-expression:6.0.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.ongres.stringprep:saslprep:1.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-resolver-dns-classes-macos:4.1.89.Final" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-codec-dns:4.1.89.Final" level="project" />
@@ -134,6 +164,24 @@
     <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-codec-socks:4.1.89.Final" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-native-unix-common:4.1.89.Final" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-classes-epoll:4.1.89.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.data:spring-data-commons:3.0.3" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-r2dbc:6.0.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-tx:6.0.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.projectreactor.addons:reactor-pool:1.0.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.guava:failureaccess:1.0.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.code.findbugs:jsr305:3.0.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.checkerframework:checker-qual:3.12.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.errorprone:error_prone_annotations:2.7.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.j2objc:j2objc-annotations:1.3" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.querydsl:querydsl-core:5.0.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.querydsl:querydsl-sql-codegen:5.0.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.auto:auto-common:1.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.auto.service:auto-service-annotations:1.0.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.querydsl:codegen-utils:5.0.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.github.classgraph:classgraph:4.8.108" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.ongres.stringprep:stringprep:1.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.mysema.commons:mysema-commons-lang:0.2.4" level="project" />
   </component>
 </module>
