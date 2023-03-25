@@ -1,4 +1,4 @@
-package dev.pkch.adapter.r2dbc
+package dev.pkch.adapter.r2dbc.post
 
 import org.springframework.data.annotation.Id
 

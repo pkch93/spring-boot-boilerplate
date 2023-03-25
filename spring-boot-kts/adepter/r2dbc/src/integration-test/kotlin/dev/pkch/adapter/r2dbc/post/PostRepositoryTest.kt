@@ -1,4 +1,4 @@
-package dev.pkch.adapter.r2dbc
+package dev.pkch.adapter.r2dbc.post
 
 import dev.pkch.support.R2dbcPostgresqlContainerLoad
 import org.assertj.core.api.Assertions.assertThat
