@@ -3,25 +3,30 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-boot-kts.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-boot-kts.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/spring-boot-kts.adepter.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/spring-boot-kts.adepter.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/spring-boot-kts.adepter.integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/spring-boot-kts.adepter.integrationTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/jpa/spring-boot-kts.adepter.jpa.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/jpa/spring-boot-kts.adepter.jpa.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/jpa/spring-boot-kts.adepter.jpa.integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/jpa/spring-boot-kts.adepter.jpa.integrationTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/jpa/spring-boot-kts.adepter.jpa.main.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/jpa/spring-boot-kts.adepter.jpa.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/jpa/spring-boot-kts.adepter.jpa.test.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/jpa/spring-boot-kts.adepter.jpa.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/jpa/spring-boot-kts.adepter.jpa.testFixtures.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/jpa/spring-boot-kts.adepter.jpa.testFixtures.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/spring-boot-kts.adepter.main.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/spring-boot-kts.adepter.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/r2dbc/spring-boot-kts.adepter.r2dbc.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/r2dbc/spring-boot-kts.adepter.r2dbc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/r2dbc/spring-boot-kts.adepter.r2dbc.integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/r2dbc/spring-boot-kts.adepter.r2dbc.integrationTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/r2dbc/spring-boot-kts.adepter.r2dbc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/r2dbc/spring-boot-kts.adepter.r2dbc.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/r2dbc/spring-boot-kts.adepter.r2dbc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/r2dbc/spring-boot-kts.adepter.r2dbc.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/r2dbc/spring-boot-kts.adepter.r2dbc.testFixtures.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/r2dbc/spring-boot-kts.adepter.r2dbc.testFixtures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter/spring-boot-kts.adapter.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter/spring-boot-kts.adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter/core/spring-boot-kts.adapter.core.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter/core/spring-boot-kts.adapter.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter/core/spring-boot-kts.adapter.core.integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter/core/spring-boot-kts.adapter.core.integrationTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter/core/spring-boot-kts.adapter.core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter/core/spring-boot-kts.adapter.core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter/core/spring-boot-kts.adapter.core.test.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter/core/spring-boot-kts.adapter.core.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter/core/spring-boot-kts.adapter.core.testFixtures.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter/core/spring-boot-kts.adapter.core.testFixtures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter/spring-boot-kts.adapter.integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter/spring-boot-kts.adapter.integrationTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter/jpa/spring-boot-kts.adapter.jpa.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter/jpa/spring-boot-kts.adapter.jpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter/jpa/spring-boot-kts.adapter.jpa.integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter/jpa/spring-boot-kts.adapter.jpa.integrationTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter/jpa/spring-boot-kts.adapter.jpa.main.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter/jpa/spring-boot-kts.adapter.jpa.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter/jpa/spring-boot-kts.adapter.jpa.test.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter/jpa/spring-boot-kts.adapter.jpa.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter/jpa/spring-boot-kts.adapter.jpa.testFixtures.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter/jpa/spring-boot-kts.adapter.jpa.testFixtures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter/spring-boot-kts.adapter.main.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter/spring-boot-kts.adapter.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter/r2dbc/spring-boot-kts.adapter.r2dbc.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter/r2dbc/spring-boot-kts.adapter.r2dbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter/r2dbc/spring-boot-kts.adapter.r2dbc.integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter/r2dbc/spring-boot-kts.adapter.r2dbc.integrationTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter/r2dbc/spring-boot-kts.adapter.r2dbc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter/r2dbc/spring-boot-kts.adapter.r2dbc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter/r2dbc/spring-boot-kts.adapter.r2dbc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter/r2dbc/spring-boot-kts.adapter.r2dbc.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter/r2dbc/spring-boot-kts.adapter.r2dbc.testFixtures.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter/r2dbc/spring-boot-kts.adapter.r2dbc.testFixtures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter/spring-boot-kts.adapter.test.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter/spring-boot-kts.adapter.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adapter/spring-boot-kts.adapter.testFixtures.iml" filepath="$PROJECT_DIR$/.idea/modules/adapter/spring-boot-kts.adapter.testFixtures.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/redis/spring-boot-kts.adepter.redis.integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/redis/spring-boot-kts.adepter.redis.integrationTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/redis/spring-boot-kts.adepter.redis.main.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/redis/spring-boot-kts.adepter.redis.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/redis/spring-boot-kts.adepter.redis.test.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/redis/spring-boot-kts.adepter.redis.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/redis/spring-boot-kts.adepter.redis.testFixtures.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/redis/spring-boot-kts.adepter.redis.testFixtures.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/spring-boot-kts.adepter.test.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/spring-boot-kts.adepter.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/spring-boot-kts.adepter.testFixtures.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/spring-boot-kts.adepter.testFixtures.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-boot-kts.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-boot-kts.buildSrc.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-boot-kts.buildSrc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-boot-kts.buildSrc.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-boot-kts.buildSrc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-boot-kts.buildSrc.test.iml" />

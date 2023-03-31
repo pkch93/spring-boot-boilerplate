@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id=":adepter:jpa:test" external.linked.project.path="$MODULE_DIR$/../../../../adepter/jpa" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="dev.pkch" external.system.module.type="sourceSet" external.system.module.version="1.0.0" type="JAVA_MODULE" version="4">
+<module external.linked.project.id=":adapter:jpa:integrationTest" external.linked.project.path="$MODULE_DIR$/../../../../adapter/jpa" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="dev.pkch" external.system.module.type="sourceSet" external.system.module.version="1.0.0" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
+    <facet type="jpa" name="JPA">
+      <configuration>
+        <setting name="validation-enabled" value="true" />
+        <setting name="provider-name" value="Hibernate" />
+        <datasource-mapping />
+        <naming-strategy-map />
+      </configuration>
+    </facet>
     <facet type="Spring" name="Spring">
       <configuration />
     </facet>
@@ -17,7 +25,6 @@
           <stringArguments>
             <stringArg name="classpath">
               <args>
-                <arg>$MODULE_DIR$/../../../../adepter/jpa/build/classes/kotlin/main</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.microutils/kotlin-logging-jvm/3.0.5/82f2256aeedccfd9c27ea585274a50bf06517383/kotlin-logging-jvm-3.0.5.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.10/7c002ac41f547a82e81dfebd2a20577a738dbf3f/kotlin-stdlib-jdk8-1.8.10.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.8.10/1e90b778ea4669b6bcbfaca57313665ddd804779/kotlin-reflect-1.8.10.jar</arg>
@@ -26,6 +33,7 @@
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-aop/3.0.4/624f2e87d204ef3de4c33d1286072c838e5d89f1/spring-boot-starter-aop-3.0.4.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/3.0.4/e64f229f772dc2952e1978a1f10d7f3a462e105d/spring-boot-starter-jdbc-3.0.4.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/3.0.4/8f957a8bc9d70c0ca922406c6e23cb3db5d48109/spring-boot-starter-3.0.4.jar</arg>
+                <arg>$MODULE_DIR$/../../../../test-support/mysql/build/classes/kotlin/main</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.8.10/cb726a23c808a850a43e7d6b9d1ba91b02fe9f05/kotlin-stdlib-jdk7-1.8.10.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.10/6d5560a229477df9406943d5feda5618e98eb64c/kotlin-stdlib-1.8.10.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/3.0.3/db1ad002d5112df66128c8df25a57bec14c735d6/spring-data-jpa-3.0.3.jar</arg>
@@ -53,6 +61,7 @@
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/6.0.6/2006ee0e1be8380f05c29deb52a97d3a1e6812d7/spring-expression-6.0.6.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/6.0.6/8a2845e0945923a9ebf3e9ef0649a28b6eeeac43/spring-core-6.0.6.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.33/2cd0a87ff7df953f810c344bdf2fe3340b954c69/snakeyaml-1.33.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mapstruct/mapstruct/1.5.3.Final/5f5d063858957ef086858bc3d003f702082297f3/mapstruct-1.5.3.Final.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate.orm/hibernate-core/6.1.7.Final/343f47b34c96fe9c44bf9b219a7b3c5d6d2fc90e/hibernate-core-6.1.7.Final.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/6.0.6/fcfe9b71badc1bce940606ac25de6d71a966f56e/spring-aspects-6.0.6.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/4.0.0/bbb399208d288b15ec101fa4fcfc4bd77cedc97a/jakarta.xml.bind-api-4.0.0.jar</arg>
@@ -82,22 +91,18 @@
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.2/a231e0d844d2721b0fa1b238006d15c6ded6842a/apiguardian-api-1.1.2.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.1/a99500cf6eea30535eeac6be73899d048f8d12a8/asm-9.1.jar</arg>
+                <arg>$MODULE_DIR$/../../../../adapter/jpa/build/classes/kotlin/main</arg>
+                <arg>$MODULE_DIR$/../../../../adapter/jpa/build/resources/main</arg>
               </args>
             </stringArg>
-            <stringArg name="destination" arg="$MODULE_DIR$/../../../../adepter/jpa/build/classes/kotlin/test" />
+            <stringArg name="destination" arg="$MODULE_DIR$/../../../../adapter/jpa/build/classes/kotlin/integrationTest" />
             <stringArg name="jvmTarget" arg="17" />
-            <stringArg name="moduleName" arg="jpa" />
+            <stringArg name="moduleName" arg="jpa_integrationTest" />
             <stringArg name="apiVersion" arg="1.8" />
             <stringArg name="languageVersion" arg="1.8" />
           </stringArguments>
           <arrayArguments>
-            <arrayArg name="friendPaths">
-              <args>
-                <arg>$MODULE_DIR$/../../../../adepter/jpa/build/classes/java/main</arg>
-                <arg>$MODULE_DIR$/../../../../adepter/jpa/build/classes/kotlin/main</arg>
-                <arg>$MODULE_DIR$/../../../../adepter/jpa/build/libs/jpa-1.0.0-plain.jar</arg>
-              </args>
-            </arrayArg>
+            <arrayArg name="friendPaths" />
             <arrayArg name="pluginClasspaths">
               <args>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.8.10/85d7bed036617120f09209e52f38cae13809176f/kotlin-scripting-jvm-1.8.10.jar</arg>
@@ -130,35 +135,26 @@
         </compilerArguments>
       </configuration>
     </facet>
-    <facet type="jpa" name="JPA">
-      <configuration>
-        <setting name="validation-enabled" value="true" />
-        <setting name="provider-name" value="Hibernate" />
-        <datasource-mapping>
-          <factory-entry name="spring-boot-kts.adepter.jpa.test" />
-        </datasource-mapping>
-        <naming-strategy-map />
-      </configuration>
-    </facet>
   </component>
   <component name="NewModuleRootManager">
-    <output-test url="file://$MODULE_DIR$/../../../../adepter/jpa/build/classes/java/test" />
+    <output-test url="file://$MODULE_DIR$/../../../../adapter/jpa/build/classes/kotlin/integrationTest" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../../adepter/jpa/src/test">
-      <sourceFolder url="file://$MODULE_DIR$/../../../../adepter/jpa/src/test/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../../adepter/jpa/src/test/kotlin" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../../adepter/jpa/src/test/resources" type="java-test-resource" />
+    <content url="file://$MODULE_DIR$/../../../../adapter/jpa/src/integration-test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/jpa/src/integration-test/kotlin" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/jpa/src/integration-test/resources" type="java-test-resource" />
     </content>
+    <content url="file://$MODULE_DIR$/../../../../adapter/jpa/src/integrationTest" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="spring-boot-kts.adepter.jpa.testFixtures" />
+    <orderEntry type="module" module-name="spring-boot-kts.adapter.jpa.main" />
     <orderEntry type="library" name="Gradle: io.github.microutils:kotlin-logging-jvm:3.0.5" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-reflect:1.8.10" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-test:3.0.4" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-data-jpa:3.0.4" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter:3.0.4" level="project" />
-    <orderEntry type="module" module-name="spring-boot-kts.adepter.jpa.main" />
+    <orderEntry type="module" module-name="spring-boot-kts.adapter.core.main" />
+    <orderEntry type="module" module-name="spring-boot-kts.test-support.mysql.main" />
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:2.0.6" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.10" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.10" level="project" />
@@ -186,7 +182,8 @@
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot:3.0.4" level="project" />
     <orderEntry type="library" name="Gradle: jakarta.annotation:jakarta.annotation-api:2.1.1" level="project" />
     <orderEntry type="library" name="Gradle: org.yaml:snakeyaml:1.33" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.mapstruct:mapstruct:1.5.3.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
     <orderEntry type="library" name="Gradle: net.minidev:json-smart:2.4.8" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-jcl:6.0.6" level="project" />
     <orderEntry type="library" name="Gradle: jakarta.activation:jakarta.activation-api:2.1.1" level="project" />
@@ -218,6 +215,12 @@
     <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-api:2.19.0" level="project" />
     <orderEntry type="library" name="Gradle: org.ow2.asm:asm:9.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.mysql:mysql-connector-j:8.0.32" level="project" />
+    <orderEntry type="module" module-name="spring-boot-kts.test-support.testcontainers-core.main" scope="RUNTIME" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.testcontainers:mysql:1.17.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.testcontainers:junit-jupiter:1.17.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.testcontainers:testcontainers:1.17.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.testcontainers:jdbc:1.17.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains:annotations:17.0.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.9.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.objenesis:objenesis:3.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.glassfish.jaxb:jaxb-runtime:4.0.2" level="project" />
@@ -227,11 +230,20 @@
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.fasterxml:classmate:1.5.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: jakarta.inject:jakarta.inject-api:2.0.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.antlr:antlr4-runtime:4.10.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.github.docker-java:docker-java-api:3.2.13" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.github.docker-java:docker-java-transport-zerodep:3.2.13" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: junit:junit:4.13.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.rnorth.duct-tape:duct-tape:1.0.8" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.apache.commons:commons-compress:1.22" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.testcontainers:database-commons:1.17.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.platform:junit-platform-engine:1.9.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.glassfish.jaxb:jaxb-core:4.0.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.14.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.github.docker-java:docker-java-transport:3.2.13" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: net.java.dev.jna:jna:5.8.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.hamcrest:hamcrest-core:2.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.eclipse.angus:angus-activation:2.0.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.glassfish.jaxb:txw2:4.0.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.sun.istack:istack-commons-runtime:4.1.1" level="project" />
   </component>
-  <component name="TestModuleProperties" production-module="spring-boot-kts.adepter.jpa.main" />
 </module>

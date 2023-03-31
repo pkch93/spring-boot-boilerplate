@@ -3,8 +3,9 @@ rootProject.name = "spring-boot-kts"
 include("web")
 include("reactive-web")
 
-include("adepter:r2dbc")
-include("adepter:jpa")
+include("adapter:core")
+include("adapter:jpa")
+include("adapter:r2dbc")
 
 include("domain")
 

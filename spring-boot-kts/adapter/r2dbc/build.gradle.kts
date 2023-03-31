@@ -14,6 +14,7 @@ configurations {
 }
 
 dependencies {
+    implementation(project(":adapter:core"))
     implementation("com.infobip:infobip-spring-data-r2dbc-querydsl-boot-starter:${Versions.INFOBIP}")
     kapt("com.querydsl:querydsl-apt:${Versions.QUERYDSL}")
     runtimeOnly("org.postgresql:r2dbc-postgresql")

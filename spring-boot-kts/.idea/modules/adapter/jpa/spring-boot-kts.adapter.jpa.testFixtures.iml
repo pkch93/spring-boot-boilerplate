@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id=":adepter:jpa:testFixtures" external.linked.project.path="$MODULE_DIR$/../../../../adepter/jpa" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="dev.pkch" external.system.module.type="sourceSet" external.system.module.version="1.0.0" type="JAVA_MODULE" version="4">
+<module external.linked.project.id=":adapter:jpa:testFixtures" external.linked.project.path="$MODULE_DIR$/../../../../adapter/jpa" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="dev.pkch" external.system.module.type="sourceSet" external.system.module.version="1.0.0" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
+    <facet type="jpa" name="JPA">
+      <configuration>
+        <setting name="validation-enabled" value="true" />
+        <setting name="provider-name" value="Hibernate" />
+        <datasource-mapping />
+        <naming-strategy-map />
+      </configuration>
+    </facet>
     <facet type="Spring" name="Spring">
       <configuration />
     </facet>
@@ -17,7 +25,7 @@
           <stringArguments>
             <stringArg name="classpath">
               <args>
-                <arg>$MODULE_DIR$/../../../../adepter/jpa/build/classes/kotlin/main</arg>
+                <arg>$MODULE_DIR$/../../../../adapter/jpa/build/classes/kotlin/main</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.10/7c002ac41f547a82e81dfebd2a20577a738dbf3f/kotlin-stdlib-jdk8-1.8.10.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.8.10/cb726a23c808a850a43e7d6b9d1ba91b02fe9f05/kotlin-stdlib-jdk7-1.8.10.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.10/6d5560a229477df9406943d5feda5618e98eb64c/kotlin-stdlib-1.8.10.jar</arg>
@@ -25,7 +33,7 @@
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
               </args>
             </stringArg>
-            <stringArg name="destination" arg="$MODULE_DIR$/../../../../adepter/jpa/build/classes/kotlin/testFixtures" />
+            <stringArg name="destination" arg="$MODULE_DIR$/../../../../adapter/jpa/build/classes/kotlin/testFixtures" />
             <stringArg name="jvmTarget" arg="17" />
             <stringArg name="moduleName" arg="jpa_testFixtures" />
             <stringArg name="apiVersion" arg="1.8" />
@@ -65,38 +73,30 @@
         </compilerArguments>
       </configuration>
     </facet>
-    <facet type="jpa" name="JPA">
-      <configuration>
-        <setting name="validation-enabled" value="true" />
-        <setting name="provider-name" value="Hibernate" />
-        <datasource-mapping>
-          <factory-entry name="spring-boot-kts.adepter.jpa.testFixtures" />
-        </datasource-mapping>
-        <naming-strategy-map />
-      </configuration>
-    </facet>
   </component>
   <component name="NewModuleRootManager">
-    <output url="file://$MODULE_DIR$/../../../../adepter/jpa/build/classes/java/testFixtures" />
+    <output url="file://$MODULE_DIR$/../../../../adapter/jpa/build/classes/java/testFixtures" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../../adepter/jpa/src/testFixtures">
-      <sourceFolder url="file://$MODULE_DIR$/../../../../adepter/jpa/src/testFixtures/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../../adepter/jpa/src/testFixtures/kotlin" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../../adepter/jpa/src/testFixtures/resources" type="java-resource" />
+    <content url="file://$MODULE_DIR$/../../../../adapter/jpa/src/testFixtures">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/jpa/src/testFixtures/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/jpa/src/testFixtures/kotlin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/jpa/src/testFixtures/resources" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="spring-boot-kts.adepter.jpa.main" />
+    <orderEntry type="module" module-name="spring-boot-kts.adapter.jpa.main" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.10" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.8.10" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.10" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="module" module-name="spring-boot-kts.adapter.core.main" scope="RUNTIME" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: io.github.microutils:kotlin-logging-jvm:3.0.5" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-reflect:1.8.10" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-starter-data-jpa:3.0.4" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-starter:3.0.4" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.mysql:mysql-connector-j:8.0.32" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.mapstruct:mapstruct:1.5.3.Final" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.slf4j:slf4j-api:2.0.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-starter-aop:3.0.4" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-starter-jdbc:3.0.4" level="project" />

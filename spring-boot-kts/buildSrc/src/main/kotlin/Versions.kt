@@ -12,6 +12,9 @@ object Versions {
     const val INFOBIP = "8.1.1"
     const val QUERYDSL = "5.0.0"
 
+    // mapper
+    val MAPSTRUCT = "1.5.3.Final"
+
     // testContainers
     const val TEST_CONTAINERS = "1.17.6"
 }

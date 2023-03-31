@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id=":adepter:test" external.linked.project.path="$MODULE_DIR$/../../../adepter" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="dev.pkch" external.system.module.type="sourceSet" external.system.module.version="1.0.0" type="JAVA_MODULE" version="4">
+<module external.linked.project.id=":adapter:test" external.linked.project.path="$MODULE_DIR$/../../../adapter" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="dev.pkch" external.system.module.type="sourceSet" external.system.module.version="1.0.0" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
       <configuration />
@@ -69,18 +69,18 @@
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.1/a99500cf6eea30535eeac6be73899d048f8d12a8/asm-9.1.jar</arg>
               </args>
             </stringArg>
-            <stringArg name="destination" arg="$MODULE_DIR$/../../../adepter/build/classes/kotlin/test" />
+            <stringArg name="destination" arg="$MODULE_DIR$/../../../adapter/build/classes/kotlin/test" />
             <stringArg name="jvmTarget" arg="17" />
-            <stringArg name="moduleName" arg="adepter" />
+            <stringArg name="moduleName" arg="adapter" />
             <stringArg name="apiVersion" arg="1.8" />
             <stringArg name="languageVersion" arg="1.8" />
           </stringArguments>
           <arrayArguments>
             <arrayArg name="friendPaths">
               <args>
-                <arg>$MODULE_DIR$/../../../adepter/build/classes/java/main</arg>
-                <arg>$MODULE_DIR$/../../../adepter/build/classes/kotlin/main</arg>
-                <arg>$MODULE_DIR$/../../../adepter/build/libs/adepter-1.0.0-plain.jar</arg>
+                <arg>$MODULE_DIR$/../../../adapter/build/classes/java/main</arg>
+                <arg>$MODULE_DIR$/../../../adapter/build/classes/kotlin/main</arg>
+                <arg>$MODULE_DIR$/../../../adapter/build/libs/adapter-1.0.0-plain.jar</arg>
               </args>
             </arrayArg>
             <arrayArg name="pluginClasspaths">
@@ -117,22 +117,18 @@
     </facet>
   </component>
   <component name="NewModuleRootManager">
-    <output-test url="file://$MODULE_DIR$/../../../adepter/build/classes/java/test" />
+    <output-test url="file://$MODULE_DIR$/../../../adapter/build/classes/java/test" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../adepter/src/test">
-      <sourceFolder url="file://$MODULE_DIR$/../../../adepter/src/test/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../adepter/src/test/kotlin" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../adepter/src/test/resources" type="java-test-resource" />
-    </content>
+    <content url="file://$MODULE_DIR$/../../../adapter/src/test" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="spring-boot-kts.adepter.testFixtures" />
+    <orderEntry type="module" module-name="spring-boot-kts.adapter.testFixtures" />
     <orderEntry type="library" name="Gradle: io.github.microutils:kotlin-logging-jvm:3.0.5" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-reflect:1.8.10" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-test:3.0.4" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter:3.0.4" level="project" />
-    <orderEntry type="module" module-name="spring-boot-kts.adepter.main" />
+    <orderEntry type="module" module-name="spring-boot-kts.adapter.main" />
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:2.0.6" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.10" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.10" level="project" />
@@ -182,5 +178,5 @@
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.objenesis:objenesis:3.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.platform:junit-platform-engine:1.9.2" level="project" />
   </component>
-  <component name="TestModuleProperties" production-module="spring-boot-kts.adepter.main" />
+  <component name="TestModuleProperties" production-module="spring-boot-kts.adapter.main" />
 </module>
