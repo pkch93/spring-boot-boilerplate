@@ -9,7 +9,7 @@ import org.testcontainers.containers.PostgreSQLContainer
 import org.testcontainers.utility.DockerImageName
 
 @Configuration
-class PostgresqlR2dbcContainerConfiguration {
+internal class PostgresqlR2dbcContainerConfiguration {
     companion object {
         @JvmStatic
         private val container = PostgreSQLContainer(DockerImageName.parse("postgres:15.2"))

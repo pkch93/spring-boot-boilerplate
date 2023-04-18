@@ -9,7 +9,7 @@ import org.testcontainers.containers.MySQLContainer
 import org.testcontainers.utility.DockerImageName
 
 @Configuration
-class MysqlContainerConfiguration {
+internal class MysqlContainerConfiguration {
     companion object {
         @JvmStatic
         private val container = MySQLContainer(DockerImageName.parse("mysql:8.0.32"))
