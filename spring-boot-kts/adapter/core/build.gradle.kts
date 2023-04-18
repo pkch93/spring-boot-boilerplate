@@ -5,5 +5,4 @@ tasks {
 
 dependencies {
     api("org.mapstruct:mapstruct:${Versions.MAPSTRUCT}")
-    annotationProcessor("org.mapstruct:mapstruct-processor:${Versions.MAPSTRUCT}")
 }

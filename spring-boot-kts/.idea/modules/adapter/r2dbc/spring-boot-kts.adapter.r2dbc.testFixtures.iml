@@ -76,8 +76,12 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../adapter/r2dbc/build/classes/java/testFixtures" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../../adapter/r2dbc/build/generated/source/kapt/testFixtures" />
-    <content url="file://$MODULE_DIR$/../../../../adapter/r2dbc/build/generated/source/kaptKotlin/testFixtures" />
+    <content url="file://$MODULE_DIR$/../../../../adapter/r2dbc/build/generated/source/kapt/testFixtures">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/r2dbc/build/generated/source/kapt/testFixtures" isTestSource="false" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../adapter/r2dbc/build/generated/source/kaptKotlin/testFixtures">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/r2dbc/build/generated/source/kaptKotlin/testFixtures" isTestSource="false" generated="true" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../../adapter/r2dbc/src/testFixtures">
       <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/r2dbc/src/testFixtures/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/r2dbc/src/testFixtures/kotlin" isTestSource="false" />

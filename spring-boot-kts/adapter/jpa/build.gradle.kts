@@ -1,3 +1,14 @@
+plugins {
+    kotlin("plugin.jpa") version Versions.KOTLIN
+    kotlin("kapt") version Versions.KOTLIN
+}
+
+allOpen {
+    annotation("jakarta.persistence.Entity")
+    annotation("jakarta.persistence.MappedSuperclass")
+    annotation("jakarta.persistence.Embeddable")
+}
+
 tasks {
     bootJar { enabled = false }
     jar { enabled = true }

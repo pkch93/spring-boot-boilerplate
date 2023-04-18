@@ -6,6 +6,7 @@
     </facet>
     <facet type="kotlin-language" name="Kotlin">
       <configuration version="5" platform="JVM 17" allPlatforms="JVM [17]" useProjectSettings="false">
+        <additionalVisibleModuleNames>:adapter:r2dbc:main</additionalVisibleModuleNames>
         <compilerSettings>
           <option name="additionalArguments" value="-Xallow-no-source-files -java-parameters -Xjsr305=strict" />
         </compilerSettings>
@@ -17,6 +18,7 @@
           <stringArguments>
             <stringArg name="classpath">
               <args>
+                <arg>$MODULE_DIR$/../../../../adapter/r2dbc/build/tmp/kapt3/classes/testFixtures</arg>
                 <arg>$MODULE_DIR$/../../../../adapter/r2dbc/build/classes/kotlin/main</arg>
                 <arg>$MODULE_DIR$/../../../../adapter/r2dbc/build/classes/java/main</arg>
                 <arg>$MODULE_DIR$/../../../../adapter/r2dbc/build/tmp/kapt3/classes/main</arg>
@@ -166,8 +168,12 @@
   <component name="NewModuleRootManager">
     <output-test url="file://$MODULE_DIR$/../../../../adapter/r2dbc/build/classes/java/test" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../../adapter/r2dbc/build/generated/source/kapt/test" />
-    <content url="file://$MODULE_DIR$/../../../../adapter/r2dbc/build/generated/source/kaptKotlin/test" />
+    <content url="file://$MODULE_DIR$/../../../../adapter/r2dbc/build/generated/source/kapt/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/r2dbc/build/generated/source/kapt/test" isTestSource="true" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../adapter/r2dbc/build/generated/source/kaptKotlin/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/r2dbc/build/generated/source/kaptKotlin/test" isTestSource="true" generated="true" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../../adapter/r2dbc/src/test">
       <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/r2dbc/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/r2dbc/src/test/kotlin" isTestSource="true" />

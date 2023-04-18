@@ -163,8 +163,10 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../../adapter/r2dbc/build/generated/source/kapt/integrationTest">
       <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/r2dbc/build/generated/source/kapt/integrationTest" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/r2dbc/build/generated/source/kapt/integrationTest" isTestSource="true" generated="true" />
     </content>
     <content url="file://$MODULE_DIR$/../../../../adapter/r2dbc/build/generated/source/kaptKotlin/integrationTest">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/r2dbc/build/generated/source/kaptKotlin/integrationTest" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/r2dbc/build/generated/source/kaptKotlin/integrationTest" isTestSource="true" generated="true" />
     </content>
     <content url="file://$MODULE_DIR$/../../../../adapter/r2dbc/src/integration-test">

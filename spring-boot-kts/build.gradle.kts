@@ -5,8 +5,6 @@ plugins {
     kotlin("plugin.spring") version Versions.KOTLIN apply false
     kotlin("plugin.jpa") version Versions.KOTLIN apply false
     kotlin("kapt") version Versions.KOTLIN apply false
-    kotlin("plugin.allopen") version Versions.KOTLIN apply false
-    kotlin("plugin.noarg") version Versions.KOTLIN apply false
     id("org.springframework.boot") version Versions.SPRING_BOOT apply false
     id("io.spring.dependency-management") version Versions.SPRING_DEPENDENCY_MANAGEMENT apply false
     idea
