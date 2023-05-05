@@ -9,6 +9,4 @@ include("adapter:r2dbc")
 
 include("domain")
 
-include("test-support:testcontainers-core")
-include("test-support:mysql")
-include("test-support:postgresql")
+include("test-support:testcontainers-support")

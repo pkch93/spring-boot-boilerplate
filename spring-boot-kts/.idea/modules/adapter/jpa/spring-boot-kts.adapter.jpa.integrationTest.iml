@@ -14,7 +14,7 @@
     <facet type="Spring" name="Spring">
       <configuration />
     </facet>
-    <facet type="kotlin-language" name="Kotlin">
+    <facet external-system-id="GRADLE" type="kotlin-language" name="Kotlin">
       <configuration version="5" platform="JVM 17" allPlatforms="JVM [17]" useProjectSettings="false">
         <compilerSettings>
           <option name="additionalArguments" value="-Xallow-no-source-files -java-parameters -Xjsr305=strict" />
@@ -35,7 +35,6 @@
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-aop/3.0.4/624f2e87d204ef3de4c33d1286072c838e5d89f1/spring-boot-starter-aop-3.0.4.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/3.0.4/e64f229f772dc2952e1978a1f10d7f3a462e105d/spring-boot-starter-jdbc-3.0.4.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/3.0.4/8f957a8bc9d70c0ca922406c6e23cb3db5d48109/spring-boot-starter-3.0.4.jar</arg>
-                <arg>$MODULE_DIR$/../../../../test-support/mysql/build/classes/kotlin/main</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.8.10/cb726a23c808a850a43e7d6b9d1ba91b02fe9f05/kotlin-stdlib-jdk7-1.8.10.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.10/6d5560a229477df9406943d5feda5618e98eb64c/kotlin-stdlib-1.8.10.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/3.0.3/db1ad002d5112df66128c8df25a57bec14c735d6/spring-data-jpa-3.0.3.jar</arg>
@@ -188,7 +187,7 @@
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-data-jpa:3.0.4" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter:3.0.4" level="project" />
     <orderEntry type="module" module-name="spring-boot-kts.adapter.core.main" />
-    <orderEntry type="module" module-name="spring-boot-kts.test-support.mysql.main" />
+    <orderEntry type="module" module-name="spring-boot-kts.test-support.testcontainers-support.main" />
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:2.0.6" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.10" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.10" level="project" />
@@ -249,11 +248,16 @@
     <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-api:2.19.0" level="project" />
     <orderEntry type="library" name="Gradle: org.ow2.asm:asm:9.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.mysql:mysql-connector-j:8.0.32" level="project" />
-    <orderEntry type="module" module-name="spring-boot-kts.test-support.testcontainers-core.main" scope="RUNTIME" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.testcontainers:mysql:1.17.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.testcontainers:junit-jupiter:1.17.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.testcontainers:mysql:1.17.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.testcontainers:postgresql:1.17.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.testcontainers:testcontainers:1.17.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.testcontainers:jdbc:1.17.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.github.docker-java:docker-java-api:3.2.13" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.github.docker-java:docker-java-transport-zerodep:3.2.13" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: junit:junit:4.13.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.rnorth.duct-tape:duct-tape:1.0.8" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.apache.commons:commons-compress:1.22" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains:annotations:17.0.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.9.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.objenesis:objenesis:3.2" level="project" />
@@ -264,18 +268,13 @@
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.fasterxml:classmate:1.5.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: jakarta.inject:jakarta.inject-api:2.0.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.antlr:antlr4-runtime:4.10.1" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.github.docker-java:docker-java-api:3.2.13" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.github.docker-java:docker-java-transport-zerodep:3.2.13" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: junit:junit:4.13.2" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.rnorth.duct-tape:duct-tape:1.0.8" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.apache.commons:commons-compress:1.22" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.testcontainers:database-commons:1.17.6" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.platform:junit-platform-engine:1.9.2" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.glassfish.jaxb:jaxb-core:4.0.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.14.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.github.docker-java:docker-java-transport:3.2.13" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: net.java.dev.jna:jna:5.8.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.hamcrest:hamcrest-core:2.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.platform:junit-platform-engine:1.9.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.glassfish.jaxb:jaxb-core:4.0.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.eclipse.angus:angus-activation:2.0.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.glassfish.jaxb:txw2:4.0.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.sun.istack:istack-commons-runtime:4.1.1" level="project" />
