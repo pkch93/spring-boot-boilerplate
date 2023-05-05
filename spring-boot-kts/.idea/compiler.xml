@@ -12,6 +12,7 @@
         <module name="spring-boot-kts.test-support.main" />
         <module name="spring-boot-kts.adapter.main" />
         <module name="spring-boot-kts.adapter.r2dbc.main" />
+        <module name="spring-boot-kts.test-support.test-core.main" />
         <module name="spring-boot-kts.test-support.testcontainers-support.main" />
         <module name="spring-boot-kts.web.main" />
         <module name="spring-boot-kts.adapter.jpa.main" />

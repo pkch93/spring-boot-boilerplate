@@ -20,5 +20,6 @@ dependencies {
     kapt("com.querydsl:querydsl-apt:${Versions.QUERYDSL}")
     kapt("org.mapstruct:mapstruct-processor:${Versions.MAPSTRUCT}")
 
+    integrationTestImplementation(project(":test-support:test-core"))
     integrationTestImplementation(project(":test-support:testcontainers-support"))
 }

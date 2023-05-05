@@ -164,8 +164,12 @@
   <component name="NewModuleRootManager">
     <output-test url="file://$MODULE_DIR$/../../../../adapter/jpa/build/classes/java/test" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../../adapter/jpa/build/generated/source/kapt/test" />
-    <content url="file://$MODULE_DIR$/../../../../adapter/jpa/build/generated/source/kaptKotlin/test" />
+    <content url="file://$MODULE_DIR$/../../../../adapter/jpa/build/generated/source/kapt/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/jpa/build/generated/source/kapt/test" isTestSource="true" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../adapter/jpa/build/generated/source/kaptKotlin/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/jpa/build/generated/source/kaptKotlin/test" isTestSource="true" generated="true" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../../adapter/jpa/src/test">
       <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/jpa/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/jpa/src/test/kotlin" isTestSource="true" />

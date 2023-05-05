@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id=":test-support:test" external.linked.project.path="$MODULE_DIR$/../../../test-support" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="dev.pkch" external.system.module.type="sourceSet" external.system.module.version="1.0.0" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
-    <facet type="Spring" name="Spring">
-      <configuration />
-    </facet>
     <facet external-system-id="GRADLE" type="kotlin-language" name="Kotlin">
       <configuration version="5" platform="JVM 17" allPlatforms="JVM [17]" useProjectSettings="false">
         <additionalVisibleModuleNames>:test-support:main</additionalVisibleModuleNames>
@@ -120,11 +117,7 @@
   <component name="NewModuleRootManager">
     <output-test url="file://$MODULE_DIR$/../../../test-support/build/classes/java/test" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../test-support/src/test">
-      <sourceFolder url="file://$MODULE_DIR$/../../../test-support/src/test/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../test-support/src/test/kotlin" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../test-support/src/test/resources" type="java-test-resource" />
-    </content>
+    <content url="file://$MODULE_DIR$/../../../test-support/src/test" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="spring-boot-kts.test-support.testFixtures" />

@@ -113,8 +113,15 @@
   <component name="NewModuleRootManager">
     <output-test url="file://$MODULE_DIR$/../../../adapter/build/classes/java/integrationTest" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../adapter/src/integration-test" />
-    <content url="file://$MODULE_DIR$/../../../adapter/src/integrationTest" />
+    <content url="file://$MODULE_DIR$/../../../adapter/src/integration-test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../adapter/src/integration-test/kotlin" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../adapter/src/integration-test/resources" type="java-test-resource" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../adapter/src/integrationTest">
+      <sourceFolder url="file://$MODULE_DIR$/../../../adapter/src/integrationTest/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../adapter/src/integrationTest/kotlin" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../adapter/src/integrationTest/resources" type="java-test-resource" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="spring-boot-kts.adapter.main" />

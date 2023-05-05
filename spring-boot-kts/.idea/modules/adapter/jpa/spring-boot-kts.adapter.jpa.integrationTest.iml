@@ -167,7 +167,11 @@
       <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/jpa/src/integration-test/kotlin" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/jpa/src/integration-test/resources" type="java-test-resource" />
     </content>
-    <content url="file://$MODULE_DIR$/../../../../adapter/jpa/src/integrationTest" />
+    <content url="file://$MODULE_DIR$/../../../../adapter/jpa/src/integrationTest">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/jpa/src/integrationTest/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/jpa/src/integrationTest/kotlin" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/jpa/src/integrationTest/resources" type="java-test-resource" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="spring-boot-kts.adapter.jpa.main" />
@@ -187,6 +191,7 @@
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-data-jpa:3.0.4" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter:3.0.4" level="project" />
     <orderEntry type="module" module-name="spring-boot-kts.adapter.core.main" />
+    <orderEntry type="module" module-name="spring-boot-kts.test-support.test-core.main" />
     <orderEntry type="module" module-name="spring-boot-kts.test-support.testcontainers-support.main" />
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:2.0.6" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.10" level="project" />

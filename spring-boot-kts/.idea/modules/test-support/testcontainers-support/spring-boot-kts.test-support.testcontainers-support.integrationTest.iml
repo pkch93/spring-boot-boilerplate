@@ -123,10 +123,17 @@
     </facet>
   </component>
   <component name="NewModuleRootManager">
-    <output-test url="file://$MODULE_DIR$/../../../../test-support/testcontainers-support/build/classes/java/integrationTest" />
+    <output-test url="file://$MODULE_DIR$/../../../../test-support/testcontainers-support/build/classes/kotlin/integrationTest" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../../test-support/testcontainers-support/src/integration-test" />
-    <content url="file://$MODULE_DIR$/../../../../test-support/testcontainers-support/src/integrationTest" />
+    <content url="file://$MODULE_DIR$/../../../../test-support/testcontainers-support/src/integration-test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../test-support/testcontainers-support/src/integration-test/kotlin" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../test-support/testcontainers-support/src/integration-test/resources" type="java-test-resource" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../test-support/testcontainers-support/src/integrationTest">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../test-support/testcontainers-support/src/integrationTest/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../test-support/testcontainers-support/src/integrationTest/kotlin" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../test-support/testcontainers-support/src/integrationTest/resources" type="java-test-resource" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="spring-boot-kts.test-support.testcontainers-support.main" />

@@ -63,11 +63,12 @@
     </facet>
   </component>
   <component name="NewModuleRootManager">
-    <output url="file://$MODULE_DIR$/../../../../test-support/testcontainers-support/build/classes/kotlin/testFixtures" />
+    <output url="file://$MODULE_DIR$/../../../../test-support/testcontainers-support/build/classes/java/testFixtures" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../../test-support/testcontainers-support/src/testFixtures">
       <sourceFolder url="file://$MODULE_DIR$/../../../../test-support/testcontainers-support/src/testFixtures/kotlin" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../test-support/testcontainers-support/src/testFixtures/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../test-support/testcontainers-support/src/testFixtures/java" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

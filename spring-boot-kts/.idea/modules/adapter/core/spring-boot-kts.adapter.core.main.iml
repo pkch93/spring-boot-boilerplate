@@ -89,7 +89,11 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../adapter/core/build/classes/java/main" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../../adapter/core/src/main" />
+    <content url="file://$MODULE_DIR$/../../../../adapter/core/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/core/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/core/src/main/kotlin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../adapter/core/src/main/resources" type="java-resource" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: org.mapstruct:mapstruct:1.5.3.Final" level="project" />

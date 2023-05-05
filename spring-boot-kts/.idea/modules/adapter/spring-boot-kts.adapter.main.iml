@@ -88,7 +88,11 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../adapter/build/classes/java/main" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../adapter/src/main" />
+    <content url="file://$MODULE_DIR$/../../../adapter/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../adapter/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../adapter/src/main/kotlin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../adapter/src/main/resources" type="java-resource" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: io.github.microutils:kotlin-logging-jvm:3.0.5" level="project" />

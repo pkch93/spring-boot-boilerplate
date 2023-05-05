@@ -9,4 +9,5 @@ include("adapter:r2dbc")
 
 include("domain")
 
+include("test-support:test-core")
 include("test-support:testcontainers-support")
