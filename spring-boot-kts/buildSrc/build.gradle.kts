@@ -3,5 +3,5 @@ plugins {
 }
 
 repositories {
-    maven("https://nexus.baemin.in/repository/maven")
+    mavenCentral()
 }
