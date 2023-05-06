@@ -7,12 +7,19 @@ plugins {
     kotlin("kapt") version Versions.KOTLIN apply false
     id("org.springframework.boot") version Versions.SPRING_BOOT apply false
     id("io.spring.dependency-management") version Versions.SPRING_DEPENDENCY_MANAGEMENT apply false
+    id("io.gitlab.arturbosch.detekt") version Versions.DETEKT
     idea
 }
 
 java {
     sourceCompatibility = JavaVersion.toVersion(Versions.JVM)
     targetCompatibility = JavaVersion.toVersion(Versions.JVM)
+}
+
+detekt {
+    toolVersion = Versions.DETEKT
+    config = files("detekt.yml")
+    buildUponDefaultConfig = true
 }
 
 allprojects {
@@ -26,7 +33,7 @@ subprojects {
         plugin("kotlin")
         plugin("java-library")
         plugin("java-test-fixtures")
-
+        plugin("io.gitlab.arturbosch.detekt")
         plugin("org.jetbrains.kotlin.plugin.spring")
         plugin("org.springframework.boot")
         plugin("io.spring.dependency-management")
@@ -76,7 +83,32 @@ subprojects {
         }
     }
 
+    val reportMerge by tasks.registering(io.gitlab.arturbosch.detekt.report.ReportMergeTask::class) {
+        output.set(rootProject.layout.buildDirectory.file("reports/detekt/merge.sarif"))
+    }
+
+    tasks {
+        detekt {
+            reports {
+                sarif.required.set(true)
+            }
+        }
+    }
+
+    plugins.withType<io.gitlab.arturbosch.detekt.DetektPlugin> {
+        tasks.withType<io.gitlab.arturbosch.detekt.Detekt> detekt@{
+            finalizedBy(reportMerge)
+
+            reportMerge.configure {
+                input.from(this@detekt.sarifReportFile)
+            }
+        }
+    }
+
+
     dependencies {
+        detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:${Versions.DETEKT}")
+
         implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
         implementation("org.jetbrains.kotlin:kotlin-reflect")
         implementation("io.github.microutils:kotlin-logging-jvm:${Versions.KOTLIN_LOGGER}")

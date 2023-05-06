@@ -3,6 +3,7 @@ object Versions {
     const val JVM = "17"
     const val KOTLIN = "1.8.10"
     const val KOTLIN_LOGGER = "3.0.5"
+    const val DETEKT = "1.22.0"
 
     // spring
     const val SPRING_BOOT = "3.0.4"
