@@ -19,7 +19,7 @@ installBoilerPlate() {
     git pull origin main
     git checkout main
     rm -rf .git
-    mv spring-boot-kts ../$2
+    mv "$1" "../$2"
     cd ..
     rm -rf temp
 
@@ -45,8 +45,6 @@ while getopts ":n:" opt; do
             ;;
     esac
 done
-
-echo "boilerplate name: $boilerplate_name"
 
 boilerplates="spring-boot-react-kts spring-boot-kts"
 
