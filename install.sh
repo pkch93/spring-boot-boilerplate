@@ -15,10 +15,13 @@ installBoilerPlate() {
     git init
     git config core.sparseCheckout true
     git remote add -f origin $REPOSITORY_URL
-    echo "$0/*" > .git/info/sparse-checkout
+    echo "$1/*" > .git/info/sparse-checkout
     git pull origin main
     git checkout main
     rm -rf .git
+    mv spring-boot-kts ../
+    cd ..
+    rm -rf boilerplate
 
     echo "finish spring-boot-boilerplate download!"
 }
