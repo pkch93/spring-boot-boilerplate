@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/redis/spring-boot-kts.adepter.redis.integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/redis/spring-boot-kts.adepter.redis.integrationTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/redis/spring-boot-kts.adepter.redis.main.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/redis/spring-boot-kts.adepter.redis.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/redis/spring-boot-kts.adepter.redis.test.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/redis/spring-boot-kts.adepter.redis.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adepter/redis/spring-boot-kts.adepter.redis.testFixtures.iml" filepath="$PROJECT_DIR$/.idea/modules/adepter/redis/spring-boot-kts.adepter.redis.testFixtures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/test-support/mysql/spring-boot-kts.test-support.mysql.iml" filepath="$PROJECT_DIR$/.idea/modules/test-support/mysql/spring-boot-kts.test-support.mysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/test-support/mysql/spring-boot-kts.test-support.mysql.integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/test-support/mysql/spring-boot-kts.test-support.mysql.integrationTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/test-support/mysql/spring-boot-kts.test-support.mysql.main.iml" filepath="$PROJECT_DIR$/.idea/modules/test-support/mysql/spring-boot-kts.test-support.mysql.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/test-support/mysql/spring-boot-kts.test-support.mysql.test.iml" filepath="$PROJECT_DIR$/.idea/modules/test-support/mysql/spring-boot-kts.test-support.mysql.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/test-support/mysql/spring-boot-kts.test-support.mysql.testFixtures.iml" filepath="$PROJECT_DIR$/.idea/modules/test-support/mysql/spring-boot-kts.test-support.mysql.testFixtures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/test-support/postgresql/spring-boot-kts.test-support.postgresql.iml" filepath="$PROJECT_DIR$/.idea/modules/test-support/postgresql/spring-boot-kts.test-support.postgresql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/test-support/postgresql/spring-boot-kts.test-support.postgresql.integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/test-support/postgresql/spring-boot-kts.test-support.postgresql.integrationTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/test-support/postgresql/spring-boot-kts.test-support.postgresql.main.iml" filepath="$PROJECT_DIR$/.idea/modules/test-support/postgresql/spring-boot-kts.test-support.postgresql.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/test-support/postgresql/spring-boot-kts.test-support.postgresql.test.iml" filepath="$PROJECT_DIR$/.idea/modules/test-support/postgresql/spring-boot-kts.test-support.postgresql.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/test-support/postgresql/spring-boot-kts.test-support.postgresql.testFixtures.iml" filepath="$PROJECT_DIR$/.idea/modules/test-support/postgresql/spring-boot-kts.test-support.postgresql.testFixtures.iml" />
+    </modules>
+  </component>
+</project>
