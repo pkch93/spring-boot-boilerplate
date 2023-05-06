@@ -19,7 +19,7 @@ installBoilerPlate() {
     git pull origin main
     git checkout main
     rm -rf .git
-    mv "$1" "../$2"
+    mv "$1" "../$1"
     cd ..
     rm -rf temp
 
@@ -31,29 +31,14 @@ then
     abort "Bash is required to interpret this script."
 fi
 
-while getopts ":n:" opt; do
-    case ${opt} in
-        n )
-            boilerplate_name=${OPTARG}
-            ;;
-        \? )
-            echo "invalid options: ${OPTARG}" 1>&2
-            exit 1
-            ;;
-        * )
-            boilerplate_name=boilerplate
-            ;;
-    esac
-done
-
 boilerplates="spring-boot-react-kts spring-boot-kts"
 
 select boilerplate in $boilerplates ; do
     if [ "$boilerplate" = "spring-boot-react-kts" ] ; then
-        installBoilerPlate "spring-boot-react-kts" $boilerplate_name
+        installBoilerPlate "spring-boot-react-kts"
         exit
     elif [ "$boilerplate" = "spring-boot-kts" ] ; then
-        installBoilerPlate "spring-boot-kts" $boilerplate_name
+        installBoilerPlate "spring-boot-kts"
         exit
     else
         abort "not supported"
